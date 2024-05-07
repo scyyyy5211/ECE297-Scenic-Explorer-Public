@@ -1,39 +1,53 @@
 # Overview
-this is a project for ece297 in uni of toronto. in a team of three, we built a map that focuses on tourism with a developed navigation system, using c++ and css for the ui. we have four milestones
+This is a project for ECE297 at the University of Toronto. In a team of three, we developed a tourism-focused map with a navigation system using C++ for the core algorithms and CSS for the user interface (UI). Our work involved tackling four milestones that guided us through building an intuitive and feature-rich solution.
 
-m1: This milestone focuses on using and extending an application programming interface (API).
-We have written a library called libstreetsdatabase that allows you to query geographic
-information database files for cities. This API consists of two pieces, each provided by a
-different header file. StreetsDatabaseAPI.h provides a higher level interface to structured street
-and intersection data; you will mostly use functions from this header file. OSMDatabaseAPI.h
-allows you to query lower level OpenStreetMap data on individual geographic points; you
-will only need to use this API for two functions in this milestone.
+# Milestones
+### M1: Geographic API Extension
+- Integrated and extended the libstreetsdatabase API for querying geographic data.
+- Leveraged StreetsDatabaseAPI for accessing structured street and intersection information.
+- Used OSMDatabaseAPI for lower-level OpenStreetMap data.
 
-m2: In this milestone you will use a graphics library called EZGL to visualize the
-map, and you will add functions to find elements in the map and display detailed information
-about them. While there are many graphics libraries, almost all use similar conventions, so
-learning EZGL will also give you experience that is very useful in working with any graphics
-library in the future.
+### M2: Map Visualization with EZGL
+- Incorporated the EZGL graphics library to visualize the map.
+- Developed functions for finding map elements and displaying detailed information.
 
-m3: In this milestone you will extend your code to find good travel routes between two points
-embedded in a graph. Algorithms to find paths in graphs are important in a very wide range
-of areas, including GIS applications like yours, integrated circuit and printed circuit board
-design, networking / internet packet routing, and even marketing through social media.
+### M3: Pathfinding Algorithms
+- Implemented algorithms to find optimal travel routes between two points using graphs.
+- Leveraged techniques applicable across various domains like GIS, circuit design, and networking.
 
-m4: In this milestone you will find a path through your map that has multiple stops, so that you
-can find a good route for a courier company driver who has multiple deliveries to make, the travelling courier problem. This
-is a variation on a classic optimization problem called the traveling salesman problem.
+### M4: Traveling Courier Problem
+- Solving the traveling courier problem, where we need to find the optimal route for a courier picking up and dropping off packages in a city, a variation of the Traveling Salesman Problem (TSP).
 
-# UI features
-main page
-auto completion search bar
-one click search buttons
-click on points of interest
-information display in status bar
-dark mode
-spoken output
-path finding: with click input or search bar input, and detailed directions
+# UI Features
+- Main Page:
+[screenshot]
+
+- Auto-completion search bar and one-click search buttons: 
+[screenshot]
+
+- Clickable points of interest:
+[screenshot]
+
+- Information display in a status bar.
+[screenshot]
+
+- Dark mode
+[screenshot]
+
+- spoken output for accessibility.
+[screenshot]
+
+- Pathfinding with input from either clicks or the search bar, providing detailed directions.
+[screenshot]
+
+- Help page for navigation.
+[screenshot]
 
 # Algorithms
-for path finding: Dijkstra and A*
-for travelling courier problem: multi destination dijkstra, ant colony optimization, greedy algorithm, 2-opt, simulated annealing
+### Pathfinding:
+- Implemented Dijkstra's and A* algorithms for efficient navigation between points. Program finds the fastest path under 0.5 seconds. 
+
+### Traveling Courier Problem:
+- Multi-destination Dijkstra to precompute all the needed paths between the intersections. 
+- Ant Colony Optimization (ACO) and greedy heuristics to find a route.
+- 2-opt optimization and simulated annealing to improve a existing route.
